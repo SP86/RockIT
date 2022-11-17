@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221117161754">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</div>
+				<nav class="header__menu menu-header" data-da=".menu__body,767.98">
+					<ul class="menu-header__list">
+						<li class="menu-header__item"><a href="" class="menu-header__link">Проекти</a></li>
+						<li class="menu-header__item"><a href="" class="menu-header__link">Вакансії</a></li>
+						<li class="menu-header__item"><a href="" class="menu-header__link">Команда</a></li>
+						<li class="menu-header__item"><a href="" class="menu-header__link">Новини</a></li>
+					</ul>
+				</nav>
+				<div class="header__contact contact-header" data-da=".menu__body,991.98">
+					<div class="contact-header__social social-icons">
+						<a href="#" class="social-icons__icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-linkedin"></use>
+							</svg>
+						</a>
+						<a href="#" class="social-icons__icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-facebook"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="contact-header__contact contact-icons">
+						<a href="#" class="contact-icons__icon contact-icons__icon_mail"></a>
+						<a href="#" class="contact-icons__icon contact-icons__icon_send"></a>
+						<a href="#" class="contact-icons__icon contact-icons__icon_call"></a>
+					</div>
+				</div>
+				<div class="header__languages languages" data-da=".header__contact,767.98">
+					<a href="#" class="languages__icon">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#svg-gb"></use>
+						</svg>
+					</a>
+					<a href="#" class="languages__icon">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#svg-ua"></use>
+						</svg>
+					</a>
+				</div>
+				<nav hidden class="menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div class="menu__body">
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="page contact-page">
+			<section class="contact-page__form-wrap contact-form-wrap" data-rjs="2">
+				<div class="contact-form-wrap__container">
+					<div class="contact-form-wrap__row">
+						<div class="contact-form-wrap__col">
+							<div class="contact-form-wrap__mobile-title">
+								Contact Us.<br />We are here for you.
+							</div>
+							<form id="feedback-form" action="#" method="POST" data-dev data-popup-message="#success-message" class="feedback-form" autocomplete="off">
+								<div class="feedback-form__form-group">
+									<input id="feedback-name" type="text" name="name" data-required data-error="Name is required" class="input form-control" />
+									<label for="feedback-name" class="feedback-form__label">First name*</label>
+								</div>
+								<div class="feedback-form__form-group">
+									<input id="feedback-email" type="text" name="email" data-required="email" data-error="Incorrect e-mail" class="input form-control" />
+									<label for="feedback-email" class="feedback-form__label">E-mail*</label>
+								</div>
+								<div class="feedback-form__form-group">
+									<input id="feedback-company" type="text" name="company" class="input form-control" />
+									<label for="feedback-company" class="feedback-form__label">Company name</label>
+								</div>
+								<div class="feedback-form__form-group">
+									<input id="feedback-phone" type="tel" name="phone" class="input form-control" placeholder="XX-XXX-XXX-XX-XX" />
+									<label for="feedback-phone" class="feedback-form__label">Phone number</label>
+								</div>
+								<div class="feedback-form__form-group">
+									<textarea id="feedback-msg" name="message" name="msg" data-required data-error="Your message is required" class="input form-control resize-ta" placeholder="Text your message"></textarea>
+									<label for="feedback-msg" class="feedback-form__label">Your message*</label>
+								</div>
+								<div class="feedback-form__form-group">
+									<button type="submit" class="button _orange _round feedback-form__submit">Submit</button>
+								</div>
+
+							</form>
+						</div>
+						<div class="contact-form-wrap__col">
+							<div class="contact-form-wrap__title">
+								<div>Contact</div>
+								<div>
+									<span></span>
+									<span>Us</span>
+								</div>
+							</div>
+							<div class="contact-form-wrap__subtitle" data-form-subtitle="We are here for you."></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div id="video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<!--			<button data-close type="button" class="popup__close">Закрыть</button>-->
+				<iframe src="https://www.youtube.com/embed/VEJSTbNm-jw?enablejsapi=1" title="YouTube video player" id="yt_player_iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div id="success-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content success-popup">
+				<div class="success-popup__wrap">
+					<div class="success-popup__title">Дякуємо за Ваше повідомлення</div>
+					<div class="success-popup__subtitle">Очікуйте на наш дзвінок</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--<div id="video" aria-hidden="true" class="popup">-->
+	<!--    <div class="popup__wrapper">-->
+	<!--        <div class="popup__content">-->
+	<!--&lt;!&ndash;            <button data-close type="button" class="popup__close">Закрыть</button>&ndash;&gt;-->
+	<!--            <div data-youtube-place class="popup__text" style="height: 630px;">-->
+
+	<!--            </div>-->
+	<!--        </div>-->
+	<!--    </div>-->
+	<!--</div>-->
+	<script src="js/app.min.js?_v=20221117161754"></script>
+
+</body>
+
+</html>
